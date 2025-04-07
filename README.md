@@ -10,11 +10,11 @@ I asked Grok to translate the repo.  The result was quite different:
 1. The way it printed the board:
 ```
 Current board:
-|   |
+  |   |
 ---------
-|   |
+  |   |
 ---------
-|   |  
+  |   |  
 Player x, enter position (0-8): 4
 
 vs
