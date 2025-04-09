@@ -8,6 +8,7 @@ This is a Go implementation of a command-line tic-tac-toe game with an unbeatabl
 - Play against an AI that uses the minimax algorithm
 - Human plays as X, computer plays as O
 - Color-coded board display
+- Comprehensive test suite
 
 ## How to Run
 
@@ -27,11 +28,35 @@ go run main.go
 - The computer will automatically make its move
 - The game ends when someone wins or there's a tie
 
+## Running Tests
+
+The project includes a comprehensive test suite. To run all tests:
+
+```bash
+go test ./...
+```
+
+To run tests for a specific package:
+
+```bash
+go test ./board
+go test ./player
+```
+
+To run a specific test with verbose output:
+
+```bash
+go test -v ./board -run TestScore
+```
+
 ## Project Structure
 
 - `main.go`: Main game loop and initialization
 - `board/board.go`: Board representation and evaluation functions
 - `player/player.go`: Player and AI logic, including the minimax algorithm
+- `board/board_test.go`: Tests for board evaluation logic
+- `player/player_test.go`: Tests for player and AI logic
+- `board/print_test.go`: Tests for board printing functionality
 
 ## Implementation Notes
 
@@ -41,3 +66,4 @@ Key differences from the Clojure version include:
 - Go's static typing vs. Clojure's dynamic typing
 - Go's imperative programming style vs. Clojure's functional approach
 - Go's struct-based data modeling vs. Clojure's vector-based approach
+- Go's standard testing package vs. Clojure's speclj testing library
