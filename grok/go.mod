@@ -1,3 +1,3 @@
-module tic-tac-toe-go
+module ttt
 
-go 1.22
+go 1.23.3
