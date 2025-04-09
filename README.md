@@ -29,3 +29,11 @@ Please enter your move (type 1-9 and hit enter):
 3. It assumed the use of `clojure.test` instead of notice the elaborate suite of `speclj` tests. 
 
 It was almost like the AI tried to infer the intent of the original implementation without looking closely at the code.
+
+### Attempt #2
+
+Given the prompt:
+
+    Hmm...  There are quite a few differences between your implementation and the original.  One is the format of the output.  Second, and this is a big one, in the original the computer plays against the human.  How did you miss this?
+
+Grok added a computer player but it is super simplistic, taking the first move available.  The output remains different.
