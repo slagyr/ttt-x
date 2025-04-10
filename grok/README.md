@@ -62,4 +62,21 @@ There is not a direct correlation between Go code and Clojure code.  Grok took a
 implementation, but it did not do direct conversion of the code.  It seems to have formulated a summary of the behavior
 and then recreated it from scratch, taking many creative liberties.  This is NOT an exact translation.
 
+### Refinements
+
+```
+It seems like you are making a lot of assumptions about the implementation.  
+Can you do the translation function by function, to achieve an exact replica of the behavior?
+```
+
+Grok keep making assumptions.  Though it confidently claims to have duplicated the behavior, it has produced nothing similar.
+
+Adjusting prompts, or adding more context to prompts doesn't seem to help.
+
+### File by File
+
+This fails on the first attempt.  I asked Grok to convert the board tests, which is did and it looks reasonable.  Then
+I asked to convert the board code.  It looked reasonable, but the tests failed.  The two files don't line up.
+
+### Dead End
 
