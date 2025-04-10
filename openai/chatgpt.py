@@ -10,7 +10,7 @@ if len(sys.argv) < 2:
 user_prompt = sys.argv[1]
 
 # Read log file contents (if it exists)
-log_path = "whole-repository/chatgpt_log.txt"
+log_path = "file-by-file/chatgpt_log.txt"
 log_context = ""
 if os.path.exists(log_path):
     with open(log_path, "r") as log_file:
@@ -53,7 +53,7 @@ output = response.choices[0].message.content
 print(output)
 
 # Append the response to a log file
-with open("whole-repository/chatgpt_log.txt", "a") as log_file:
+with open("file-by-file/chatgpt_log.txt", "a") as log_file:
     log_file.write("\n---PROMPT---\n")
     log_file.write(user_prompt + "\n")
     log_file.write("\n---RESPONSE---\n")
